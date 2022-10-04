@@ -184,6 +184,7 @@ cursor: pointer;
 background: #2196F3;
 /* box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15); */
 border-radius: 4px;
+border: 0;
 min-width: 216px;
 height: 50px;
 margin-top: 30px;
@@ -200,11 +201,19 @@ margin-top: 30px;
     gap: 30px;
 }
 
-.features-item-icon {
+.features-icon {
     width: 270px;
     height: 120px;
     background-color: #F5F4FA;
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
+.features-item-icon {
+    width: 70px;
+    height: 70px;
 }
 
 
@@ -254,6 +263,9 @@ margin-bottom: 50px;
 .team {
     padding-top: 94px;
     padding-bottom: 94px;
+    max-width: 1600px;
+    margin: 0 auto;
+    background-color: #F5F4FA;
 }
 
 .team-list {
@@ -342,21 +354,21 @@ color: var(--section-text);
 /* ---------!CLIENTS!-------- */
 
 .clients {
-    /* padding-top: 94px; */
+    padding-top: 94px;
     padding-bottom: 94px;
     text-align: center;
 }
 
-.clients-titel {
-font-family: 'Roboto';
-font-style: normal;
-font-weight: 700;
-font-size: 36px;
-line-height: 1.16;
-text-align: center;
-letter-spacing: 0.03em;
-color: var(--main-text);
-max-width: 297px;
+.clients-tiiel {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.16;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: var(--main-text);
+    margin-bottom: 50px;
 }
 
 .clients-list {
@@ -366,6 +378,10 @@ max-width: 297px;
 }
 
 .clients-item {
+
+}
+
+.clients-icon-link {
 width: 170px;
 height: 92px;
 border: 1px solid #AFB1B8;
@@ -373,25 +389,19 @@ border-radius: 4px;
 display: flex;
 justify-content: center;
 align-items: center;
-margin-top: 50px;
-}
-
-.clients-icon-link {
-    width: 106px;
-    height: 60px;
 }
 
 .clients-icon {
     fill: #AFB1B8
 }
 
-.clients-item:hover, 
-.clients-item:focus {
+.clients-icon-link:hover, 
+.clients-icon-link:focus {
     border-color: var(--accent-color);
 }
 
-.clients-item:hover .clients-icon, 
-.clients-item:focus .clients-icon {
+.clients-icon-link:hover .clients-icon, 
+.clients-icon-link:focus .clients-icon {
     fill: var(--accent-color);
 }
 
@@ -401,12 +411,12 @@ margin-top: 50px;
 .footer{
     background-color: #2F303A;
     padding: 60px 0;
-    max-width: 1600px;
     margin: 0 auto;
 }
 
 .footer-container {
     display: flex;
+    align-items: baseline;
 }
 
 .footer-adderess {
@@ -527,7 +537,7 @@ max-width: 116px;
 
 
 .footer-soc-icon {
-    fill: #AFB1BA
+    fill: #FFFFFF
 }
 
 /* ---------!PORTFOLIO!-------- */
@@ -561,6 +571,8 @@ letter-spacing: 0.03em;
 color: #212121;
 background: #F5F4FA;
 border-radius: 4px;
+padding: 6px 22px;
+border: 0;
 }
 
 .portfolio-btn:hover,
@@ -588,7 +600,6 @@ box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12),
 
 .portfolio-item:hover,
 .portfolio-item:focus {
-    border: 1px solid #EEEEEE;
 box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12),   
 0px 4px 4px rgba(0, 0, 0, 0.06), 
 1px 4px 6px rgba(0, 0, 0, 0.16);
